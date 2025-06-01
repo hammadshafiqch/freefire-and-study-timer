@@ -1,0 +1,141 @@
+/* google fonts integration */
+
+.space-grotesk-font{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 70%;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.timer-display {
+    font-size: 5rem;
+    margin: 1rem 0;
+    font-family: 'Digital', monospace;
+    text-shadow: 0 0 10px #00fffc;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+.mode-display {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    min-height: 2.5rem;
+}
+
+.btn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #ff6b81;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.study-mode {
+    color: #4cd137;
+    text-shadow: 0 0 10px #4cd137;
+}
+
+.game-mode {
+    color: #e84118;
+    text-shadow: 0 0 10px #e84118;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+}
+
+.monogram {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.monogram:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.author-photo {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.monogram:hover .author-photo {
+    opacity: 1;
+}
+
+/* Add this to make it work on touchscreens */
+@media (hover: none) {
+    .author-photo {
+        display: none;
+    }
+}
